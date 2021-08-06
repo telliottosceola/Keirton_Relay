@@ -30,7 +30,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   if(Serial.available()){
-    Serial.println("Data received");
     uint8_t buffer[300];
     Serial.readBytesUntil('\n', buffer, sizeof(buffer));
     DynamicJsonBuffer jBuffer;
