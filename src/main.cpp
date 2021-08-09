@@ -55,7 +55,7 @@ void loop() {
           return;
         }else{
           if(delay + duration > remainingDuration){
-            durations[channel-1] = (remainingDuration+duration)-delay;
+            durations[channel-1] = (duration+delay);
           }else{
             //remaining duration is greater than new command duration + delay so ignore this command
             return;
