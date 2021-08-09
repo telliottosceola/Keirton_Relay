@@ -99,7 +99,7 @@ void backgroundTasks(void* pvParameters){
             durations[i] = tempDurations[i];
             delays[i] = tempDelays[i];
             tempDurations[i] = 0;
-            tempDelays[i] = 0
+            tempDelays[i] = 0;
           }else{
             //Duration time has passed so turn off relay
             durationStarts[i] = 0;
